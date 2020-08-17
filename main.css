@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+   }
+   
+   html{
+       width: 100vw;
+       height: 100vh;
+   }
+   body{
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: top;
+    width: 100%;
+    height: 100%;
+   }
+   .blur {
+     background: rgba(255, 255, 255, 0.2); 
+     backdrop-filter: blur(4px);
+     height: 100vh;
+       width: 100%;
+   }
+   #heading 
+   {
+       color: aliceblue;
+       font-family: serif;
+       font-style: normal;
+       font-size:130px;
+       text-align: center;
+   }
+   #videoContainer {
+       width:640px;
+       text-align: left;
+       border:480px;
+       margin:0 auto;
+   }
+   .taken{
+    position: absolute;
+    height: 100px!important;
+    width: 100px!important;
+    transition: all 0.5s ease-in;
+    border: solid 3px white;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    top: 20px;
+    right: 640px;
+    z-index: 2;
+    
+}
+#webcam, #canvas{
+    position: fixed;
+    height: 480px;
+    width: 640px;
+    object-fit: cover;
+    transform: scaleX(-1);
+    filter: FlipH;
+}
+#camera--trigger{
+    width: 200px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.2);
+    position: fixed;
+    bottom: 30px;
+    left: calc(50% - 100px);
+}

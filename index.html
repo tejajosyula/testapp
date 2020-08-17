@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>testapp</title>
+        <meta charset = "utf-8"/>
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/blazeface"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@tensorflow-models/coco-ssd"> </script>
+        <link rel = "stylesheet" href = "main.css">
+    </head>
+    <body>
+        <div class = "background">
+            <div class = "blur">
+                <div id = "videoContainer">
+                    <video id = "webcam" width = "640" height = "480" autoplay = "true" ></video>
+                    <canvas id = "canvas" width = "640" height = "480"></canvas>
+                    <img src="//:0" alt="" id="camera--output">
+                    <button id = "camera--trigger">Click Me to get a picture</button>
+                </div>
+                <script src = "facerecognize.js"></script>
+            </div>
+        </div>
+    </body>
+</html>
